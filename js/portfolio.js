@@ -4,5 +4,9 @@ $(document).ready(function() {
     $('#portfolio-flters li').on('click', function() {
         $('#portfolio-flters li').removeClass('filter-active');
         $(this).addClass('filter-active');
+        var filterValue = $(this).attr('data-filter');
+        mixer.filter(filterValue);
     });
 });
+
+
