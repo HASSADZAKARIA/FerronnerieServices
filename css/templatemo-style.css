@@ -592,7 +592,7 @@ a#logo {
 /*==============================================
 07. WORK BLOCK CSS
 ================================================*/
-.gallery-section {
+/* .gallery-section {
   text-align: center;
 }
 .portfolio-item img {
@@ -750,6 +750,70 @@ a#logo {
 
 .portfolio-links a:hover {
     color: #1bb1dc;
+} */
+.portfolio-container {
+  position: relative;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio-item.hide {
+  opacity: 0;
+  transform: scale(0.8);
+  position: absolute;
+}
+
+.portfolio-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.portfolio-wrap img {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  transform: translateY(100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio-wrap:hover .portfolio-info {
+  transform: translateY(0);
+}
+
+#portfolio-flters {
+  padding: 0;
+  margin: 0 0 30px;
+  list-style: none;
+  text-align: center;
+}
+
+#portfolio-flters li {
+  display: inline-block;
+  padding: 8px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+#portfolio-flters li.filter-active {
+  background: white;
+  color: #222;
 }
 
 /*==============================================
