@@ -35,7 +35,7 @@ pour le telephone
     justify-content: space-between; /* Espace entre logo et bouton */
     align-items: center;
     padding: 10px 15px;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   /* Style du logo et du texte "Ferronnerie Services" */
@@ -44,7 +44,7 @@ pour le telephone
     align-items: center;
     white-space: nowrap; /* Pas de passage à la ligne */
     overflow: hidden;
-    max-width: 80%; /* Limiter la largeur pour éviter que le texte ne dépasse */
+    max-width: 70%; /* Limiter la largeur pour éviter que le texte ne dépasse */
     text-overflow: ellipsis;
   }
 
@@ -63,6 +63,7 @@ pour le telephone
 
   /* Bouton hamburger */
   .navbar-toggle {
+    display: block;
     font-size: 24px;
     color: #333;
   }
