@@ -25,19 +25,20 @@ CSS SITEMAP >>>>
 pour le telephone
 ================================================*/
 /* Styles pour les petits écrans */
+/* Styles pour les petits écrans */
 @media (max-width: 767px) {
   .navbar {
       padding: 10px 15px;
   }
 
   #logo {
-      height: 80px;
+      height: 60px;
       margin-right: 5px;
       padding: 0;
   }
 
   #logo img {
-      height: 60px;
+      height: 40px;
   }
 
   .navbar-toggle {
@@ -48,13 +49,17 @@ pour le telephone
       padding: 10px 0;
   }
 
+  .navigation-menu {
+      font-size: 12px; /* Réduire la taille de la police pour les petits écrans */
+  }
+
   .navigation-menu li {
       margin: 5px 0;
   }
 
   .navigation-menu li a {
-      font-size: 14px;
-      padding: 10px 15px;
+      font-size: 12px; /* Réduire la taille de la police pour les liens */
+      padding: 8px 10px; /* Réduire le padding pour les liens */
   }
 }
 
