@@ -21,6 +21,43 @@ CSS SITEMAP >>>>
 
 ==================================================*/
 
+/*============================================== 
+pour le telephone
+================================================*/
+/* Styles pour les petits écrans */
+@media (max-width: 767px) {
+  .navbar {
+      padding: 10px 15px;
+  }
+
+  #logo {
+      height: 80px;
+      margin-right: 5px;
+      padding: 0;
+  }
+
+  #logo img {
+      height: 60px;
+  }
+
+  .navbar-toggle {
+      font-size: 18px;
+  }
+
+  .nav-box {
+      padding: 10px 0;
+  }
+
+  .navigation-menu li {
+      margin: 5px 0;
+  }
+
+  .navigation-menu li a {
+      font-size: 14px;
+      padding: 10px 15px;
+  }
+}
+
 /*==============================================
 01. GENERAL CSS
 ================================================*/
