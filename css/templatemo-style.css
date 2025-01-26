@@ -54,7 +54,7 @@ pour le telephone
   }
 
   #logo span {
-    font-size: 16px; /* Agrandir légèrement le texte */
+    font-size: 12px; /* Agrandir légèrement le texte */
     font-weight: bold;
     color: #333;
     line-height: 1; /* Réduire l'espacement vertical du texte */
