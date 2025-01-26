@@ -26,42 +26,75 @@ pour le telephone
 ================================================*/
 /* Styles pour les petits écrans */
 /* Styles pour les petits écrans */
+/* Styles pour les petits écrans */
 @media (max-width: 767px) {
+  /* Ajustement global pour la navbar */
   .navbar {
-      padding: 10px 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Espace entre logo et bouton */
+    align-items: center;
+    padding: 10px 15px;
+    overflow: hidden;
   }
 
+  /* Style du logo et du texte "Ferronnerie Services" */
   #logo {
-      height: 60px;
-      margin-right: 5px;
-      padding: 0;
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /* Pas de passage à la ligne */
+    overflow: hidden;
+    max-width: 80%; /* Limiter la largeur pour éviter que le texte ne dépasse */
+    text-overflow: ellipsis;
   }
 
   #logo img {
-      height: 40px;
+    height: 30px; /* Taille du logo */
+    margin-right: 8px; /* Espacement entre le logo et le texte */
   }
 
+  #logo span {
+    font-size: 16px; /* Agrandir légèrement le texte */
+    font-weight: bold;
+    color: #333;
+    line-height: 1; /* Réduire l'espacement vertical du texte */
+    display: inline-block;
+  }
+
+  /* Bouton hamburger */
   .navbar-toggle {
-      font-size: 18px;
+    font-size: 24px;
+    color: #333;
   }
 
+  /* Menu déroulant */
   .nav-box {
-      padding: 10px 0;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 1000;
   }
 
-  .navigation-menu {
-      font-size: 12px; /* Réduire la taille de la police pour les petits écrans */
+  .nav-box.show {
+    display: block;
   }
 
   .navigation-menu li {
-      margin: 5px 0;
+    text-align: center;
+    padding: 10px 0;
   }
 
   .navigation-menu li a {
-      font-size: 12px; /* Réduire la taille de la police pour les liens */
-      padding: 8px 10px; /* Réduire le padding pour les liens */
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
   }
 }
+
+
 
 /*==============================================
 01. GENERAL CSS
